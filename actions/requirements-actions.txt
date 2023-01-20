@@ -1,0 +1,4 @@
+psycopg2
+random
+twilio.rest
+flask
