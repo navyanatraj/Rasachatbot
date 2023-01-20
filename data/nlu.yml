@@ -1,0 +1,423 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+   - hey
+   - hello
+   - hi
+   - hello there
+   - good morning
+   - good evening
+   - moin
+   - hey there
+   - let's go
+   - hey dude
+   - goodmorning
+   - goodevening
+   - good afternoon
+
+- intent: faq_event_pay
+  examples: |
+    - Do I have to pay for reporting an event
+    - Should I pay for reporting an event
+    - Should we pay for reporting an event
+    - How much does the reporting cost?
+    - How much does the reporting cost
+    - What is the cost of registration 
+    - What is the cost of registration?
+    - What is the cost of registration of the event?
+    - Is there any fee for reporting a birth or death?
+    - Do I need to pay to file a birth or death report?
+    - Is there a cost associated with reporting an event such as a birth or death?
+    - Do I have to pay for submitting an event report for a birth or death?"
+    - Is there a charge for reporting an event like a birth or death?
+    - Do I need to pay to submit an event report for a birth or death?
+    - Do I have to pay for filing an event notice for a birth or death?
+    - Is there a fee associated with filing an event report for a birth or death? 
+    - Is there a cost for submitting an event report for a birth or death?
+    - Do I need to pay a fee for submitting an event report for a birth or death?
+    - Is there a cost for reporting an event of birth or death?
+    - Do I have to pay to report an event such as a birth or death?
+    - Is there a charge for filing an event report for a birth or death? 
+    - Do I have to pay to report an event like a birth or death?
+    - Do I need to pay anything to submit an event report for a birth or death?
+    - Is there a fee for filing an event notice for a birth or death?
+    
+- intent: faq_event_time
+  examples: |
+    - What is the time period prescribed for registering the event
+    - Can registration can be made after the normal period of registration
+    - After how many days can I make the registration
+    - Days left to registration a birth
+    - Days left to registration a death
+    - After how many days can I make the registration?
+    - How long can I wait to registration an event
+    - How long can I wait to registration an event?
+    - How long can I wait to registration a birth
+    - How long can I wait to registration a death
+    - When can I report an event
+    - When can I report a birth
+    - When can I report a death 
+
+- intent: faq_event_who
+  examples: |
+    - Who is responsible for registration?
+    - Who should be responsible for registration 
+    - Who will do the registration for birth and death
+    - Who will do the registration
+    - Who will do the reporting
+    - Who is responsible for reporting an event such as a birth?
+    - Who should file an event report for a death?
+    - Who is in charge of reporting an event like a birth or death?
+    - Who is responsible for submitting an event report for a death?
+    - Who is accountable for reporting a birth or death event?
+    - Who is supposed to file an event notice for a birth?
+    - Who is in charge of reporting an event like a birth or death?
+    - Who is responsible for submitting an event report for a birth?
+    - Who is accountable for filing an event report for a death?
+    - Who is supposed to report an event of birth or death?
+    - Who is responsible for reporting an event such as a birth?
+    - Who should file an event report for a death?
+    - Who is in charge of reporting an event like a birth or death?
+    - Who is responsible for submitting an event report for a death?
+    - Who is accountable for reporting a birth or death event?
+    - Who is supposed to file an event notice for a birth?
+    - Who is in charge of reporting an event
+    - Who is responsible for reporting an event such as a birth?
+    - Who should file an event report for a death?
+    - Who is in charge of reporting an event like a birth or death?
+    - Who is responsible for submitting an event report for a death?
+    - Who is accountable for reporting a birth or death event?
+    - Who is supposed to file an event notice for a birth?
+    - Who is in charge of reporting an event like a birth or death?
+    - Who is responsible for submitting an event report for a birth?
+    - Who is accountable for filing an event report for a death?
+    - Who is supposed to report an event of birth or death?
+    - Who is expected to file an event report for a birth?
+    - Who is responsible for informing about an event of death?
+    - Who is in charge of reporting a birth or death?
+    - Who is supposed to file an event notice for a death?
+    - Who is responsible for submitting an event report for a birth or death?
+    - Who is accountable for reporting an event of birth or death?
+    - Who is expected to report a birth or death event?
+    - Who is responsible for informing about an event of birth?
+    - Who should be notified about a death event?
+    - Who is responsible for reporting a birth?
+    - Who should file an event report for a birth?
+    - Who is in charge of reporting a death event?
+    - Who is responsible for submitting an event report for a death event?
+    - Who is accountable for reporting a birth event?
+
+- intent: faq_birth_death_copy
+  examples: |
+    - How many copies of birth certificate can we get
+    - How many copies of death certificate can we get
+    - How many copies of death certificate can be obtained
+    - Can I get birth certificate without the name of a child
+    - I dont have name of the child can I get a birth certificate
+    - Without name can I get the birth  certificate
+    - Can I update my  birth  certificate
+    - Can I update my  death  certificate
+    - Can I make any corrections in my birth  certificate
+    - Can I make any corrections in my death  certificate
+
+- intent: faq_bd_certificate_benifits
+  examples: |
+    - What are the benefits of registration of birth and death
+    - Why should I update death 
+    - Why should I update births
+    - Why Should we report births and deaths 
+    - What if I dont report births and deaths
+    - What will I get if I report births and deaths  
+
+- intent: faq_npr_imp_instructions
+  examples: |
+    - What are the steps for self-enumeration for NPR?
+    - Can you tell me the important instructions to register for National Population Register?
+    - What do I need to know before registering for NPR through self-enumeration?
+    - Can you provide guidance on self-enumeration for National Population Register?
+    - What are the key instructions for registering for NPR?
+    - Can you explain the process of self-enumeration for National Population Register?
+    - What are the important things to keep in mind while registering for NPR?
+    - Can you give me the guidelines for self-enumeration for National Population Register?
+    - What are the necessary instructions for registering for National Population Register?
+    - Can you outline the process for self-enumeration for NPR?
+    - What are the critical steps for registering for National Population Register?
+    - Can you provide important information on self-enumeration for NPR?
+    - What are the important details to keep in mind while self-enumerating for NPR?
+    - Can you give me the important instructions for registering for National Population Register?
+    - Can you give me the important instructions for registering for NPR?
+    - What are the key points to consider while self-enumerating for NPR?
+    - Can you outline the important process for registering for National Population Register?
+    - What are the significant instructions for self-enumerating for NPR?
+    - Can you provide the necessary information for registering for National Population Register?
+    - What are the vital steps for self-enumeration for National Population Register?
+    - Can you give me the important guidelines for registering for NPR?
+    - What are the crucial instructions for self-enumerating for National Population Register?
+    - Can you outline the important process for registering for NPR?
+    - What are the necessary steps for self-enumerating for National Population Register?
+    - Can you give me the important information for registering for NPR?
+    - What are the key steps for self-enumerating for National Population Register?
+    - What are the steps for self-enumeration for NPR?
+    - Can you tell me the important instructions to register for National Population Register?
+    - What do I need to know before registering for NPR through self-enumeration?
+    - Can you provide guidance on self-enumeration for National Population Register?
+    - What are the key instructions for registering for NPR?
+    - Can you explain the process of self-enumeration for National Population Register?
+    - What are the important things to keep in mind while registering for NPR?
+    - Can you give me the guidelines for self-enumeration for National Population Register?
+    - What are the necessary instructions for registering for National Population Register?
+    - Can you outline the process for self-enumeration for NPR?
+    - What are the critical steps for registering for National Population Register?
+    - Can you provide important information on self-enumeration for NPR?
+    - What are the important details to keep in mind while self-enumerating for NPR?
+    - Can you give me the important instructions for registering for National Population Register?
+    - What are the key points to consider while self-enumerating for NPR?
+    - Can you outline the important process for registering for National Population Register?
+    - What are the significant instructions for self-enumerating for NPR?
+    - Can you provide the necessary information for registering for National Population Register?
+    - What are the vital steps for self-enumeration for National Population Register?
+    - Can you give me the important guidelines for registering for NPR?
+    - What are the crucial instructions for self-enumerating for National Population Register?
+    - Can you outline the important process for registering for NPR?
+    - What are the necessary steps for self-enumerating for National Population Register?
+    - Can you give me the important information for registering for NPR?
+    - What are the key steps for self-enumerating for National Population Register?
+
+- intent: faq_report_office
+  examples: |    
+    - Who should I contact for registering a birth?
+    - Where can I find registration offices for death events?
+    - Whom should I approach for registering a birth or death event?
+    - Where are the registration centers for birth events located?
+    - Who do I need to talk to for registering a death?
+    - Where can I go to register a birth?
+    - Whom should I contact for registering a death event?
+    - Where are the registration offices for birth events located?
+    - Who do I need to speak to for registering a birth?
+    - Where can I find registration centers for death events?
+    - Whom should I approach for registering a birth or death?
+    - Where are the registration offices for death events located?
+    - Who do I need to contact for registering a birth event?
+    - Where can I go to register a death?
+    - Whom should I talk to for registering a birth or death event?
+    - Where are the registration centers for birth and death events located?
+    - Who do I need to speak to for registering a death event?
+    - Where can I find registration offices for birth events?
+    - Whom should I contact for registering a birth or death?
+    - Where are the registration offices for birth and death events located?
+    - Who do I need to talk to for registering a death?
+    - Where can I go to register a birth event?
+    - Whom should I approach for registering a birth or death event?
+    - Where are the registration centers for death events located?
+    - Who do I need to contact for registering a death event?
+    - Where can I find registration offices for birth and death events?
+
+- intent: faq_npr_docs
+  examples: |    
+    - What documents do I need to provide for self-enumeration for NPR?
+    - Can you tell me what documents are required to register for National Population Register?
+    - What identification do I need to have before registering for NPR through self-enumeration?
+    - What papers are needed for registering for NPR?
+    - Can you explain the documents required for self-enumeration for National Population Register?
+    - What identification cards are necessary for registering for NPR?
+    - Can you give me the documents guidelines for self-enumeration for NPR?
+    - What are the required documents for registering for National Population Register?
+    - Can you outline the documents needed for self-enumeration for NPR?
+    - What are the critical documents for registering for National Population Register?
+    - Can you provide important information on documents required for self-enumeration for NPR?
+    - What are the important documents to keep in mind while self-enumerating for NPR?
+    - Can you give me the important documents for registering for National Population Register?
+    - What are the key documents to consider while self-enumerating for NPR?
+    - Can you outline the important documents for registering for National Population Register?
+    - What are the significant documents for self-enumerating for NPR?
+    - Can you provide the necessary documents for registering for National Population Register?
+    - What are the vital documents for self-enumeration for National Population Register?
+    - Can you give me the important documents guidelines for registering for NPR?
+    - What are the crucial documents for self-enumerating for National Population Register?
+    - Can you outline the important documents for registering for NPR?
+    - What are the necessary documents for self-enumerating for National Population Register?
+    - Can you give me the important documents information for registering for NPR?
+    - What are the key documents for self-enumerating for National Population Register?
+
+- intent: faq_npr_eligibility
+  examples: |
+    - Who is eligible to register for NPR
+    - Who can do self-enumeration for the National Population Register?
+    - Can you tell me who can register for the NPR?
+    - Who is able to complete self-enumeration for the National Population Register?
+    - Are there any restrictions on who can register for NPR?
+    - Who is authorized to complete self-enumeration for the NPR?
+    - Who all are permitted to register for National Population Register?
+    - Who can be a part of National Population Register by self-enumeration?
+    - I want to know who can register themselves for NPR?
+    - Who all are qualified to do self-enumeration for the National Population Register?
+    - Who is able to complete self-enumeration process for NPR?
+    - Who is eligible to register for the National Population Register?
+    - Can anyone register for NPR or are there restrictions?
+    - Who is authorized to register for National Population Register through self-enumeration?
+    - Who all are permitted to do self-enumeration for National Population Register?
+    - Is there an age limit to register for NPR through self-enumeration?
+    - Can a foreigner register for National Population Register?
+    - Who is required to register for the NPR?
+    - Is there any specific criteria for self-enumeration for National Population Register?
+    - Is it mandatory for all citizens to register for NPR?
+    - Can a non-citizen register for NPR through self-enumeration?
+    - Who is responsible for registering for National Population Register?
+    - Who should register for NPR, every one or only certain individuals?
+    - Is there any special documentation required for self-enumeration for NPR?
+
+- intent: faq_bd_corrections
+  examples: | 
+    - How can I make corrections in my birth certificate?
+    - Is it possible to make changes in my death certificate?
+    - Can I update my birth certificate after it's been issued?
+    - How do I go about making corrections in my death certificate?
+    - What is the process for making changes to my birth certificate?
+    - Can I make corrections to my death certificate after it's been issued?
+    - How can I update my birth certificate?
+    - What is the procedure for making corrections to my death certificate?
+    - Can I edit my birth certificate if there are mistakes?
+    - How do I make changes to my death certificate?
+    - What is the process for updating my birth certificate?
+    - Can I correct errors in my death certificate?
+    - How can I make changes to my birth certificate?
+    - What is the procedure for updating my death certificate?
+    - Can I edit my death certificate if there are mistakes?
+    - How do I make updates to my birth certificate?
+    - What is the process for making corrections to my birth or death certificate?
+    - Can I make changes to my birth or death certificate?
+    - How can I update my birth or death certificate?
+    - What is the procedure for making corrections in my birth or death certificate?
+    - Can I edit my birth or death certificate if there are mistakes?
+    - How do I make changes to my birth or death certificate?
+    - What is the process for updating my birth or death certificate?
+    - Can I correct errors in my birth or death certificate?
+    - How can I make changes to my birth or death certificate?
+
+- intent: self_enum 
+  examples: |
+    - Can you explain the process for registering for NPR?
+    - How do I go about registering for the National Population Register?
+    - What is the procedure for registering for NPR?
+    - Can you tell me the steps for registering for National Population Register?
+    - How can I register for NPR?
+    - Can you give me the process for registering for National Population Register?
+    - What are the requirements for registering for NPR?
+    - Can you outline the process for registering for National Population Register?
+    - What documents do I need to provide for registering for NPR?
+    - Can you provide the process for registering for National Population Register?
+    - What are the steps for self-enumeration for NPR?
+    - Can you explain the requirements for registering for National Population Register?
+    - How can I register for National Population Register?
+    - Can you provide the process for self-enumeration for NPR?
+    - What are the guidelines for registering for NPR?
+    - Can you give me the process for registering for National Population Register?
+    - What is the way to register for NPR?
+    - Can you outline the process for self-enumeration for National Population Register?
+    - How do I register for National Population Register?
+    - Can you provide the process for registering for NPR?
+    -  Can you tell me how I can self-enumerate for NPR?
+    - What is the process for registering for National Population Register through self-enumeration?
+    - How do I go about self-enumeration for NPR?
+    - Can you explain the procedure for self-enumeration for National Population Register?
+    - How can I register myself for NPR?
+    - Can you give me the steps for self-enumeration for National Population Register?
+    - I want to register for NPR, what is the process?
+    - Can you outline the process for self-enumeration for NPR?
+    - What documents do I need to provide for self-enumeration for NPR?
+    - Can you provide the process for registering for National Population Register through self-enumeration?
+    - What are the guidelines for self-enumeration for NPR?
+    - Can you give me the process for registering for NPR through self-enumeration?
+    - How can I self-enumerate for National Population Register?
+    - Can you provide the process for self-enumeration for National Population Register?
+
+- intent: report_birth_death
+  examples: |  
+    - I want to report a birth
+    - A girl was born today
+    - A boy was born today
+    - A baby is born in our family 
+    - Is there any fee for registration of births and deaths
+    - A baby was born today
+    - There has been an accident 
+    - A person has died in front of me 
+    - Someone has died today
+    - Someone has expired today
+    - My grandfather has expired today
+    - My grandfather died today
+    - My grandfather died today
+    - My grandmother died today 
+    - My father has expired today
+    - My mother has expired today
+    - My grandfather has expired
+    - My grandfather died yesterday
+    - My grandfather died a few days ago 
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+  
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

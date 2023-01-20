@@ -1,0 +1,92 @@
+version: "3.1"
+
+stories:
+
+
+# - story: happy path
+  # steps:
+  # - intent: greet
+  # - action: utter_greet  
+# 
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: payment faq
+  steps:
+  - intent: faq_event_pay
+  - action: utter_faq_event_pay
+
+- story: report time  faq
+  steps:
+  - intent: faq_event_time
+  - action: utter_faq_event_time
+
+- story: who to report faq
+  steps:
+  - intent: faq_event_who
+  - action: utter_faq_event_who
+
+- story: bd copy faq
+  steps:
+  - intent: faq_birth_death_copy
+  - action: utter_faq_birth_death_copy
+
+- story: benifits faq
+  steps:
+  - intent: faq_bd_certificate_benifits
+  - action: utter_faq_bd_certificate_benifits
+
+- story: npr instructions faq
+  steps:
+  - intent: faq_npr_imp_instructions
+  - action: utter_faq_npr_imp_instructions
+
+- story: report office faq
+  steps:
+  - intent: faq_report_office
+  - action: utter_faq_report_office
+
+- story: npr docs faq
+  steps:
+  - intent: faq_npr_docs
+  - action: utter_faq_npr_docs 
+
+- story: bd corrections faq
+  steps:
+  - intent: faq_bd_corrections
+  - action: utter_faq_bd_corrections
+
+- story: npr eligibility faq
+  steps:
+  - intent: faq_npr_eligibility
+  - action: utter_faq_npr_eligibility
+
+- story: report birth and death 
+  steps:
+  - intent: report_birth_death
+  - action: utter_ask_email_id
+
+- story: Self Enumeration
+  steps: 
+  - intent: self_enum
+  - action: utter_self_enum 
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

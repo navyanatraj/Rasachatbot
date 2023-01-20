@@ -1,0 +1,172 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq_event_pay
+  - faq_event_time
+  - faq_event_who
+  - faq_birth_death_copy
+  - faq_bd_certificate_benifits
+  - faq_npr_imp_instructions
+  - faq_report_office
+  - faq_npr_docs
+  - faq_npr_eligibility
+  - faq_bd_corrections
+  - self_enum 
+  - report_birth_death
+
+# actions:
+  # -
+
+
+# entities:
+# - email_id
+# - date_of_event
+# slots:
+  # email_id:
+    # type: text
+    # mappings:
+    # - type: from_text
+      # entity: email_id
+      # conditions:
+    # - active_loop: birth_death_form
+      # 
+  # date_of_event:
+    # type: any
+    # mappings:
+    # - type: from_text
+      # entity: date_of_event
+      # conditions:
+      # - active_loop: birth_death_form
+# forms:
+  # birth_death_form:
+    # required_slots:
+        # - email_id
+        # - date_of_event
+
+responses:
+  utter_greet:
+  - text: "Hey!How are you"
+  
+
+  utter_faq_event_pay:
+  - text: "If event of a birth or death is reported for registration to the prescribed authority within 
+          the normal period of 21days, no fee would be charged" 
+
+  utter_faq_event_time:
+  - text: "The normal period of 21 days (from the date of occurrence) has been prescribed for
+          reporting the birth, death and still birth events.
+          If any event of birth or death is not reported for registration within 21 days, the same
+          can be reported any time under the Delayed Registration provisions prescribed under
+          Section 13 of the Act with payment of fee prescribed"
+         
+  
+  utter_faq_event_who:
+  - text: " In respect of birth or death occurred in a house, it is the duty of the Head of the
+           household or nearest relative of the head present in the house or in the absence
+           of any such person, the oldest male person present therin during the said period is
+           responsible to report the event to the concerned Registrar/ sub Registrar. These events
+           can also be reported through the prescribed Notifiers such as Anaganwadi Workers,
+           ANM's, ASHA's and others.
+           (ii) In respect of birth or death occurred in a hospital, health center, Maternity or
+           nursing home or other such institutions, the medical officer In-charge or any
+           person authorized by him in this behalf is responsible for reporting"
+
+
+  utter_faq_birth_death_copy:
+  - text: " One free copy of birth / death certificate is issued to the informant under Section 12 of
+           the RBD Act.Under the provision of Section 17 of the Act, any number of copies can be
+           obtained by any oneafterpaying the prescribed fee.
+           Under the provision of Section 14 of the Act, a birth certificate can be obtained without
+           the name of the child. In such cases, the name can be entered by the concerned
+           registration authority without any charge within 12 months and by charging the
+           prescribed fee up to 15 years (from the date of registration)." 
+
+  utter_faq_bd_certificate_benifits:
+  - text: " The birth certificate is the first right of the child and it is the first step towards
+           emerging :
+           ->For admission to schools.
+           -> As proof of age for employment.
+           -> For proof of age at marriage.
+           -> To establish parentage.
+           -> To establish age for purpose of enrollment in Electoral Rolls.
+           -> To establish age for insurance purposes.
+           -> For registering in National Population Register (NPR).
+           -> Production of death certificate for the purpose of inheritance of property.
+           and for claiming dues from insurance companies and other companies."
+               
+
+
+  utter_faq_npr_imp_instructions:
+  - text: "Aadhar number cannot be changed for a logged in member;   Logged in member can change his mobile number using  the CHANGE MOBILE NUMBER button ;
+           Members below 18 cannot apply for NPR "
+
+  utter_faq_report_office:
+  - text: "The events of birth and death are registered at the place of occurrence of the
+         event i.e. where the event took place. Under the provision of Section 7 of the RBD
+         Act, the Registrars of Births and Deaths are appointed for each local area comprising the
+         area within the jurisdiction of the Municipality,Panchayat or other local authority. The
+         Sub- Registrars are also appointed under section 7(5) of the Act and assignedthem any
+         or all powers of Registrars.
+         I. Rural Areas- The following Officials have been appointed as Registrar ofBirths and
+         Deaths:
+         i) Panchayat Secretaries/Karmi/Gram Sevak, Gram Vikasadhikari in 16 States and
+         3 UTs.(Andhra Pradesh, Bihar, Chhattisgarh(CEO JanpadPanchyat), Goa,
+         Gujarat, Himachal Pradesh, Jharkhand, Kerala, Madhya Pradesh(CEO
+         JanpadPanchyat), Maharashtra, Rajasthan, Tripura, Telangana, Uttar Pradesh,
+         Uttarakhand, West Bengal (Sub Registrar) Daman & Diu, D & N Haveli and
+         Puducherry.)
+         (iii)Village Accountants / Village Administrative Officers in 2 States - Karnataka and
+         Tamil Nadu.
+         (iv) SHO/Police Officials in Jammu&Kashmir .
+         II. Urban Areas: The Municipal Health Officer, Health officer or Equivalent Officers are
+         appointed as Registrar of births and deaths.
+         The Medical Officer in charge or equivalent of the District Hospital, Referral
+         Hospital and other Government Hospitals has also declared Registrar of births and
+         deaths for registration and issuance of birth/ death certificate for those events which occurred in their premises" 
+
+  utter_faq_npr_eligibility:
+  - text: "All persons who have been enumerated under the previous NPR exercise in 2015 can update the records of their families by self-enumeration process. Data of any new member of the household can also be added through this process."               
+  
+  utter_faq_bd_corrections:
+  - text: " Corrections or Cancellations are allowed under the provision of Section 15 of the RBD
+          Act and the corresponding State Rules made there under. "
+
+  utter_self_enum:
+  - text: " Please enter aadhar number"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  
+  utter_faq_npr_docs:
+  - text: " No document will be collected at the time of updation of NPR"
+
+  utter_ask_email_id:
+  - text: "Please enter email id"
+
+  utter_ask_date_of_event:
+  - text: "Please enter date of occurance of the event "
+
+ 
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_cheer_up:
+  - text: " Never give up . This too shall pass "
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
